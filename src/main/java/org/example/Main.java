@@ -5,24 +5,21 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        객체 변수 = new 객체();
+        자동차 a = new 자동차();
+        a.최고속력 = 240;
+        자동차 b = new 자동차();
+        b.최고속력 = 260;
 
-        변수.성 = "유";
-        변수.이름 = "건혁";
-        변수.나이 = 29;
-        변수.키 = 180.7;
+        System.out.println(a.최고속력);
+        System.out.println(b.최고속력);
 
-        System.out.println("이름 : " + 변수.성 + " " + 변수.이름);
-        System.out.println("나이 : " + 변수.나이);
-        System.out.println("키 : " + 변수.키);
-    }
     }
 
-    class 객체 {
-        String 성;
+    static class 자동차 {
         String 이름;
-        int 나이;
-        double 키;
+        String 색깔;
+        int 번호;
+        int 최고속력;
     }
+}
