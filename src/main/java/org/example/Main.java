@@ -5,26 +5,24 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-//int a = 10;
-//int b = 10;
 
+        int rs = 계산기.합(10, 20);
+        System.out.println(rs);
 
-        계산기.합(20, 10, 30);
-        System.out.println();
-        계산기.합(20, 40, 30);
-        }
+        boolean rs2 = 계산기.is_a_bigger_than_b(10, 20);
+        System.out.println(rs2);
+        rs2 = 계산기.is_a_bigger_than_b(240, 20);
+        System.out.println(rs2);
+        rs2 = 계산기.is_a_bigger_than_b(20, 20);
+        System.out.println(rs2);
     }
+}
 
 class 계산기 {
-    static void 합(int a, int b, int c) {
-        System.out.printf(a + " + " + b);
-        System.out.printf(" = ");
-        System.out.println(c);
-        if(a+b==c) {
-            System.out.println("정답");
-        }
-        if(a+b!=c) {
-            System.out.println("오답");
-        }
+    static int 합(int a, int b) {
+        return a + b;
+    }
+    static boolean is_a_bigger_than_b(int a, int b) {
+        return a>b;
     }
 }
