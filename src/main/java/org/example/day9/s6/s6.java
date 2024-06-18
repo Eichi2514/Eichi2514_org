@@ -30,12 +30,12 @@ class 전사 {
 
     void 공격(String 이름, String 무기) {
         System.out.println(이름 + "(가) " + 무기 + "(으)로 공격합니다.");
-        a = 이름;
-        b = 무기;
+        this.a = 이름;
+        this.b = 무기;
     }
 
     void 재공격() {
-        System.out.println(a + "(가) " + b + "(으)로 공격합니다.");
+        System.out.println(this.a + "(가) " + this.b + "(으)로 공격합니다.");
     }
 }
 
